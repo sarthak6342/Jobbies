@@ -1,0 +1,181 @@
+
+   body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+    height:100vh;
+    font-family: 'IM Fell French Canon', serif;
+   }   
+     .container{
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+     }
+    #contact-section{
+      background: linear-gradient(rgba(77, 61, 61, 0.6),rgba(0,0,0,0.9)),url(contact.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+    #contact-section .container h2{
+      text-align: center;
+       text-decoration: underline;
+        /* text-decoration-color:red; */
+        text-underline-position: under;
+        color: rgb(238, 235, 235);
+        letter-spacing: 2px;
+        font-size:35px;
+    }
+    #contact-section .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: #fff;
+       font-size: 35px;
+       letter-spacing:2px;
+    }
+    .contact-form i.fa{
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 38%;
+      margin: 2%;
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }     
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }      
+      .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: white;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 14px ;
+        margin:10px;
+        width: 70%;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: white;
+        border: none;
+        outline:none;
+      }
+      input::placeholder{
+        color: white;
+      }    
+       textarea{
+      padding: 14px;
+      margin: 10px;     
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: white;
+      height:16vh;
+      border: none;
+      outline:none;
+     }
+     textarea::placeholder{
+       color: white;
+     }   
+      .submit{
+      width: 40%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 44px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-top:3%;
+      margin-left: 2%;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+     }
+     .submit:hover{
+           border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+     }
+     @media all and (max-width: 900px){
+      nav{
+        padding: 5px 30px;
+      }
+      nav ul li.items{
+        width: 100%;
+        display: none;
+      }
+      nav ul li.items.show{
+        display: block;
+      }
+      nav ul li.btn{
+        display: block;
+      }
+      nav ul li.items:hover{
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #33ffff,
+                    inset 0 0 10px #66ffff;
+      }
+      nav ul li.items:hover:after{
+        opacity: 0;
+      }
+    }
+    @media (max-width: 768px){
+    #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        font-size: 21px;
+        text-align: center;
+      }
+      #contact-section .submit{
+        width: 60%;
+      }
+      #contact-section .container p{
+        font-size:17px;
+      width: 95%; 
+      letter-spacing: 0.5px;
+      padding-bottom:1%;
+      padding-top:7%;
+      }
+      #contact-section .container h2{
+      font-size:22px;
+      padding-top: 7%;
+      }
+      .form-info {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+    input {
+      padding: 9px;
+      margin: 6px;
+      width: 85%;
+    }
+    textarea {
+      padding: 9px;
+      margin: 3px;
+      width: 85%;
+      height: 12vh;
+    }
+    .submit{
+      width:30%;
+      font-size:14px;
+      height:37px;
+    }
+  }
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
